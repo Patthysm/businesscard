@@ -1,0 +1,54 @@
+:root{
+    --dark-pink:#DA627D;
+    --light-pink:#FFA5AB;
+    --letter-color:#F9DBBD;
+    --background-photo:#A53860;
+    --pink:#A53860;
+}
+@keyframes border {
+    0%{background-color: var(--background-photo);}
+    25%{background-color: red;}
+    50%{background-color: var(--pink);}
+    75%{background-color: yellow;}
+    100%{background-color: var(--light-pink);}
+
+}
+body {
+    margin: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.photo {
+    margin: auto 0;
+    width: 15rem;
+    height:15rem;
+    border-radius: 2rem;
+}
+.photo {
+    padding: 1rem;
+    background-color: var(--background-photo);
+    animation-name: border;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+}
+
+.card {
+    width: 32rem;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: var(--dark-pink);
+    color: var(--letter-color);
+    border-bottom: 3rem solid var(--light-pink);
+    border-radius: 3rem;
+}
+.card-content{
+    padding: 1rem;
+}
+h3{
+    font-weight: 200;
+    font-size: 1rem;
+}
